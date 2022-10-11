@@ -1,0 +1,542 @@
+<!doctype  html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="D:\VS Code\bootstrap\about.html">
+  <style>
+
+
+ 
+
+
+
+
+
+
+    .cmargintop {
+      margin-top: 100px;
+    }
+
+    .footer2{
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;  
+    }
+
+    .AbOut {
+      text-align: center;
+      margin-top: 100px;
+      color: red;
+      border-bottom: 5px solid;
+    }
+
+    .glitch-wrapper {
+   max-width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #222;
+}
+
+.glitch {
+   position: relative;
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #fff;
+   letter-spacing: 5px;
+   z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
+.glitch:before {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #0ff;
+   z-index: -1;
+}
+
+.glitch:after {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #ff00ff;
+   z-index: -2;
+}
+
+@keyframes glitch-color {
+   0% {
+      transform: translate(0);
+   }
+
+   20% {
+      transform: translate(-3px, 3px);
+   }
+
+   40% {
+      transform: translate(-3px, -3px);
+   }
+
+   60% {
+      transform: translate(3px, 3px);
+   }
+
+   80% {
+      transform: translate(3px, -3px);
+   }
+
+   to {
+      transform: translate(0);
+   }
+  }
+
+
+
+    
+  </style>
+</head>
+
+
+<body>
+
+<!-- nav -->
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container" ;>
+    <img src="C:\Users\Asus\Pictures\Saved Pictures\Rakt5.png" class="fixed-top">
+    <a class="navbar-brand" href="#">BLOOD </a>
+    <button class="navbar-toggler" type="button " data-bs-toggle="collapse" data- bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class=" dropdown-toggle btn btn-danger" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            LOGIN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">LOOKING FOR BLOOD</a></li>
+            <li><a class="dropdown-item" href="#">WANT TO DONATE</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModals">
+              LOGIN
+            </button>
+            </li>
+            <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalR">
+              SING UP</li>
+            </button>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- login form -->
+<div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+        
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sing Up -->
+<div class="modal fade" id="exampleModalR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">SING UP</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <!-- image slid -->
+  <div class="container cmargintop">
+    <div class="row ">
+      <div class="col-6 cmargintop">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <img src="https://media.istockphoto.com/photos/top-view-of-blood-bag-and-patients-specimen-picture-id934451976?k=20&m=934451976&s=612x612&w=0&h=fOA9aXh5cEYqfZtfJF2tNWhEYfCCn-vRuNYs8NeHNPk="    class="d-block w-100 imgarow" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                             </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://media.istockphoto.com/photos/blood-donor-hands-with-red-heart-and-drop-medical-donation-and-blood-picture-id1178051617?k=20&m=1178051617&s=612x612&w=0&h=QRrFXrFLAtFnBRcWYXjchGDMSc6IUFQXYwyhzN0t5FI=" class="d-block w-100 imgarow " alt="...">
+              <div class="carousel-caption d-none d-md-block">
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://media.istockphoto.com/photos/blood-type-touch-screen-concept-picture-id637957146?k=20&m=637957146&s=612x612&w=0&h=PLU7TIqtQbncdAsDdG88kg6cqh2BVRCDGzbVfNOBt8Q=" class="d-block w-100  imgarow" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                             </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-6 cmargintop">
+        <div id="carouselExampleCaptionsA" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleCaptionsA" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsA" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsA" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <img src="https://images.pexels.com/photos/4031504/pexels-photo-4031504.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100 imgarowl" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.pexels.com/photos/6629363/pexels-photo-6629363.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100 imgarowl " alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.pexels.com/photos/6129894/pexels-photo-6129894.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100 imgarowl" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsA"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsA"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="AbOut">
+      <h1 class="glitch" style="margin-left: 550px;" data-glitch="AbOut">AbOut</h1>
+    </div>
+  </div><br>
+
+  <div class="container bg-light shadow p-3 mb-5 bg-body rounded" style="border: radius 10px ; text-align: center; border-radius: 10px;"><br><br>
+
+    <h3>e-RaktKosh: A Centralized Blood Bank Management System</h3><br><br>
+  </div><br>
+
+  <div class="container">
+    <h4>eRaktKosh was Inaugurated on 7th April 2016 by Hon'ble Minister of Health and Family Welfare, Sh. J P Nadda.
+    </h4><br>
+    <p> e-Rakt Kosh enforces Drug & Cosmetic Act, National blood policy standards and guidelines ensuring proper
+      collection & donation, effective management and monitoring the quality and quantity of the donated blood.
+      Considering the national roll out, e-Rakt Kosh has been developed with modular and scalable approach with
+      configurable rule based architecture allowing customization to easily incorporate specific requirements from
+      nationwide stakeholders.
+    </p>
+  </div><br>
+
+  <div class="container bg-light " style="border-radius: 10px;"><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul style="list-style-type: disc">
+          <li>
+            <h4>
+              <u style="color: red; text-decoration: underline;">Objectives</u>
+            </h4>
+          </li>
+          <li style="list-style-type: disc">Safe and Adequate Blood
+            Supplies</li>
+          <li style="list-style-type: disc">Reduced Turnaround Time</li>
+          <li style="list-style-type: disc">Preventing Wastage of Blood
+          </li>
+          <li style="list-style-type: disc">Restrict Professional Donors
+          </li>
+          <li style="list-style-type: disc">Networking of Blood Banks</li>
+          <li style="list-style-type: disc">Donor Repository</li>
+        </ul>
+      </div>
+
+
+      <div class="col-sm-4">
+        <ul style="list-style-type: disc">
+
+          <li>
+            <h4>
+              <u style="color: red; text-decoration: underline;">Salient Features</u>
+            </h4>
+          </li>
+          <li style="list-style-type: disc">Web Based Application</li>
+          <li style="list-style-type: disc">Aadhar Linkage</li>
+          <li style="list-style-type: disc">Decision Suppport</li>
+          <li style="list-style-type: disc">Enforces Guidelines</li>
+          <li style="list-style-type: disc">Dashboard</li>
+          <li style="list-style-type: disc">Statutory Reports</li><br>
+        </ul>
+      </div>
+
+      <div class="col-md-4 col--sm-4">
+
+        <a href="https://picsum.photos/400/200.webp">
+          <!--  <span class="fa fa-user" id="text" title="Download eRaktKosh Brouchure"></span> -->
+          <img src="https://picsum.photos/400/200.webp" alt="Download Brouchure" class="pull-right"
+            data-original-title="Download eRaktKosh Brouchure" data-placement="top" data-toggle="tooltip" id="tooltip1">
+          <!-- <h4 class="imgDescription">Download eRaktKosh Brouchure</h4> -->
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container"><br>
+    <div class="row">
+      <h4>
+        <u style="color: red; text-decoration: underline;" >e-Rakt Kosh has six major components for management of the blood donation life cycle:</u>
+      </h4>
+      </li>
+      <li style="list-style-type: disc">The bio metric Donor Management System for identifying, tracking and blocking donors based on donor's health, donation history etc.</li>
+      <li style="list-style-type: disc">It provides features such as blood grouping, TTI screening, antibody screening, component preparation etc. as per the defined processes and rules.</li>
+      <li style="list-style-type: disc">A centralized Blood Inventory Management System for keeping track of the blood stock across numerous blood banks.</li>
+      </li>
+      <li style="list-style-type: disc">Bio-Medical Waste Management System for disposal of discarded blood and other waste generated during this process.
+      </li>
+      <li style="list-style-type: disc">Generation of rare blood group donor registries and the generation of regular repeat donors
+      </li>
+      <li style="list-style-type: disc">Alert and Notification System</li>
+      </ul>
+    </div>
+  </div><br><br>
+
+
+  
+  <div class="container bg-dark text-light "><br>
+    <!-- footer lower -->
+    <div class="footer-lower ms-5">
+      <div class="auto-container sitemap">
+        <div class="auto-container sitemap">
+          <div class="row clearfix">
+            <div class="col-md-3 col-sm-12 col-xs-12  wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+            <h3 class="text-left text-light">Looking for Blood</h3>
+            <ul style="line-height:165%">
+              <li><a href="/BLDAHIMS/bloodbank/stockAvailability.cnt" class="footer2">Blood Availability</a></li>
+              <li><a class="footer2" href="/BLDAHIMS/bloodbank/nearbyBBRed.cnt">Blood Bank Directory</a></li>
+              <li><a class="footer2" href="/BLDAHIMS/bloodbank/portalThalassemiaLogin.cnt">Thalassemia Request</a></li>                    					  
+  </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12  wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+            <h3 class="text-left">Want to Donate Blood</h3>
+            <ul style="line-height:165%">
+               <li><a class="footer2" href="/BLDAHIMS/bloodbank/campSchedule.cnt">Blood Donation Camps</a></li>                    
+    <li><a  class="footer2" href="/BLDAHIMS/bloodbank/onlineDonationRequest.cnt">Appointment for Blood Bank</a></li>
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/portalDonorLogin.cnt">Donor Login</a></li>
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/voluntryDonorsGroupRegistration.cnt" title="Voluntary Donor Group">Voluntary Donor Group</a></li> 	
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/donateblood.cnt">About Blood Donation</a></li>		
+      <li><a class="footer2" href="/BLDAHIMS/bloodbank/onlineCampRequestNewBB.cnt" title="Register VBD Camp">Register VBD Camp</a></li> 
+                     
+    
+  </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12  wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+            <h3 class="text-left">Blood Bank Login</h3>
+            <ul style="line-height:165%">
+     <li><a class="footer2" href="/eRaktKosh/hissso/loginLogin">eRaktkosh Login</a></li>
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/bbOnboard.cnt?hmode=GETONBOARDFORMESSENTIAL">Add your Blood Bank</a></li>					 
+  </ul>
+            </div>
+          
+  </ul>
+            
+            <div class="col-md-3 col-sm-12 col-xs-12  wow bounceInLeft animated" style="visibility: visible; animation-name: bounceInLeft;">
+           <h3 class="text-left">About Us</h3>
+           <ul style="line-height:165%">                   
+    
+   <!--  <li><a class="footer2" href='/BLDAHIMS/bloodbank/aboutNHM.cnt'>About NHM Initiatives</a></li> -->
+     <li><a class="footer2" href="/BLDAHIMS/bloodbank/about.cnt">About eRaktkosh</a></li> 
+      <li><a title="All Notifications" class="footer2" href="/BLDAHIMS/bloodbank/notification.cnt">Notifications</a></li>
+      <li><a title="Eraktkosh FAQs" class="footer2" href="/BLDAHIMS/bloodbank/eraktkoshfaq.cnt">Eraktkosh FAQs</a></li>
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/transactions/bbpublicindexGallery.html">Gallery</a></li>
+    <li><a class="footer2" href="/BLDAHIMS/bloodbank/transactions/video.html" title="Video gallery">Video Gallery</a></li>
+     <li><a class="footer2" href="/BLDAHIMS/bloodbank/contact.cnt" title="Contact No">Contact Us</a></li>
+          <li><a class="footer2" href="/BLDAHIMS/bloodbank/downloadMobile.cnt" title="Mobile Apps">Mobile Apps</a></li>    
+     
+  </ul>          
+              </div>
+             
+       </div>
+    </div><br>
+    
+          
+       <div class="auto-container">
+          <div class="row clearfix">
+             <!--Footer Logo-->
+             
+     <div class="col-md-6 col-sm-12 col-xs-12 footer-logo text-center "><span id="copyYear">© 2016 -2022</span>  <a class="footer2" href="http://mohfw.nic.in/" target="_blank">by Ministry of class="footer2" Health and Family Welfare</a> </div>
+              <div class="col-md-6 col-sm-12 col-xs-12 footer-logo text-center ">  ®&nbsp;Designed and Devloped by<a class="footer2" href="http://cdac.in/" target="_blank"> Centre for Development of Advanced Computing</a> </div>                  
+                <div class="col-md-12 col-sm-12 col-xs-12 footer-logo text-center ">
+              <span><a id="mylink" class="footer2" href="/BLDAHIMS/bloodbank/termsAndConditions.cnt">Terms &amp; Conditions</a></span> | <span><a id="mylink" class="footer2" href="/BLDAHIMS/bloodbank/privacyPolicy.cnt">Privacy Policy</a></span> | <span><a id="mylink" class="footer2" href="/BLDAHIMS/bloodbank/accessibilityStmt.cnt">Accessibility Statement</a></span> | <span id="updatetime">Last Updated : Oct 09 2022</span> | <span><a id="mylink" class="footer2" href="/BLDAHIMS/bloodbank/eraktkoshSiteMap.cnt">Site Map</a></span>
+              </div>
+              </div>
+              
+              <script>
+              document.getElementById('copyYear').innerHTML="&copy; 2016 -" + new Date().getFullYear();
+              var d = (new Date()).toString().split(' ').splice(1,3).join(' ');
+              document.getElementById('updatetime').innerHTML="Last Updated : " + d;
+              </script>
+             
+       </div>
+    </div>
+    </div>
+    </footer>
+  </div>
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
